@@ -18,7 +18,7 @@
 .title {
   padding: 60px;
   margin-left: 40px;
-  color: rgb(240, 128, 128);
+  color: rgb(0, 0, 0);
 
   font-size: 35px;
 }
@@ -54,6 +54,8 @@ p {
 .image-section img {
   width: 450px;
   margin-left: 100px;
+  background-color: #3a3a3a;
+  border-radius: 30px;
 }
 
 .btn {
@@ -75,30 +77,32 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 110px;
-  margin-left: 165px;
+  margin-left: 100px;
   margin-top: 75px;
 }
 
 /* popular-collection-style */
 
 .collection-title {
+  font-family: poppins;
   text-align: center;
   font-weight: bold;
+  font-size: 30px;
   font-family: Poppins;
-  color: #3a3a3a;
+  color: #050505;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 .collection-container {
   width: 1047px;
-  height: 100%;
-  margin-left: 196px;
-  margin-right: 196px;
+  height: 1385px;
+  margin-left: 159px;
+  margin-right: 128px;
   top: 935px;
 }
+
 .collections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -113,11 +117,28 @@ p {
   padding: 10px;
   box-shadow: 10px 10px 40px grey;
   border-radius: 5px;
+  line-height: 1.6em;
 }
 
-i {
-  font-size: 50px;
+.collections h4 {
+  text-align: right;
   color: rebeccapurple;
+}
+
+.collection .fa {
+  color: rgb(233, 233, 18);
+}
+
+.more-btn {
+  text-align: right;
+  margin-right: 153px;
+  font-weight: 500;
+  font-family: poppins;
+}
+
+.more-btn h2 {
+  color: #e02c6d;
+  font-size: 22px;
 }
 
 /* featured-section style */
@@ -125,6 +146,7 @@ i {
 .featured-container {
   display: flex;
   flex-direction: row;
+  margin-top: 200px;
 }
 
 .image-sec img {
@@ -144,10 +166,34 @@ i {
   line-height: 70px;
 }
 
+.featured-title p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+}
+.feature-btn {
+  margin-top: 25px;
+  height: 50px;
+  width: 250px;
+  border-radius: 4px 4px;
+  border: none;
+  background: #e02c6d;
+}
+.feature-btn span {
+  color: #ffff;
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* footer section style */
 footer {
-  height: 300px;
+  position: absolute;
   width: 100%;
-  margin-top: 100px;
+  height: 450px;
+  margin-top: 150px;
   background-color: rgb(6, 6, 51);
 }
 
@@ -158,5 +204,18 @@ footer div {
 
 footer div h3 {
   color: #fff;
-  font-size: 40px;
+  font-size: 50px;
+}
+
+footer div p {
+  font-size: 25px;
+}
+
+.social-icon .fa {
+  padding: 20px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 50px;
 }
